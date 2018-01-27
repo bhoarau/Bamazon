@@ -6,14 +6,14 @@ USE Bamazon;
 CREATE TABLE Products(
     ItemID MEDIUMINT AUTO_INCREMENT NOT NULL,
     Product VARCHAR(100) NOT NULL,
-    DepartmentName VARCHAR(50) NOT NULL,
+    Department VARCHAR(50) NOT NULL,
     Price DECIMAL(10,2) NOT NULL,
     Stock INT(10) NOT NULL,
     primary key(ItemID)
 );
 
 
-INSERT INTO Products(Product,DepartmentName,Price,Stock)
+INSERT INTO Products(Product,Department,Price,Stock)
 VALUES ("Arrow","ELECTRONICS",29.99,50),
     ("The Flash","ELECTRONICS",29.99,50),
     ("Cherios","GROCERY",5.50,25),
